@@ -15,7 +15,7 @@ get_api_key <- function(key = NULL) {
     Sys.setenv(REBONEKEY = key)
     return(key)
   }
-  api_key <- Sys.getenv("REBONEKEY", unset = NULL)
+  api_key <- Sys.getenv("REBONEKEY", unset = "")
 
   if (is.null(api_key) || api_key == "") {
     stop("API key is not set. Please set the REBONEKEY environment variable or provide a key as a parameter.")
