@@ -1,4 +1,25 @@
 # 공통 base 함수 (httr 네임스페이스 사용, 기타 base 함수도 네임스페이스 명시)
+#' Title
+#'
+#' @param base_url
+#' @param key
+#' @param Type
+#' @param pIndex
+#' @param pSize
+#' @param ...
+#'
+#' @returns
+#' @export
+#'
+#' @examples
+#' res1 <- get_api_key() |>
+#'         reb_tbl_list(Type = "json", pIndex = 1, pSize = 5)
+#'
+#' res1 |> parse_reb_api_json_context()
+#'
+#' res1 |> parse_reb_api_json()
+#'
+#'
 call_reb_api <- function(
     base_url,
     key = "sample key",
