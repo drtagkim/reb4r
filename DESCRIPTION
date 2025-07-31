@@ -1,0 +1,22 @@
+Package: reb4r
+Type: Package
+Title: 한국부동산원 데이터인 R-ONE 데이터 수집을 위한 도구입니다.
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "태경", "김",
+      email = "tk_kim@khu.ac.kr",
+      role = c("aut", "cre")
+    )
+  )
+Description: 한국부동산원의 R-ONE 데이터 수집을 통한 연구를 수행하기 위해 제작된 
+             데이터 수집용 패키지입니다.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.3.2
+Depends:
+  httr,
+  jsonlite,
+  tibble
+  
